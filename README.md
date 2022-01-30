@@ -1,4 +1,2 @@
 # rpi-projects
-Random crap with raspberry pi
-
-Kudos to https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/
+Random raspberry pi related projects.
