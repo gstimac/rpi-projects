@@ -1,0 +1,13 @@
+[Unit]
+Description=A python script that measures the humidity and temperature via the DHT22 sensor
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/projects/humidity.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.targ
