@@ -13,14 +13,11 @@ systemctl daemon-reload
 systemctl enable service_name
 ```
 
-#### 3.
-Reboot your Raspberry Pi
-
 #### handy systemd commands
 
 `systemctl status|start|stop|restart service_name`
 
-`journalctl -u service_name` > show log
+`journalctl -u service_name` 
 
 ### Resources
 - https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/
