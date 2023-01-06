@@ -1,0 +1,13 @@
+[Unit]
+Description=A systemd service for pigpiod
+After=multi-user.target
+
+[Service]
+Type=idle
+User=root
+ExecStart=/usr/bin/pigpiod
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.targ

@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=idle
 User=pi
-ExecStart=/usr/bin/python3 /home/pi/projects/humidity.py
+ExecStart=/usr/bin/python3 /opt/DHT22-humidity-temp-sensor/measure-DHT22.py
 Restart=always
 RestartSec=10
 
