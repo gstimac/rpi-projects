@@ -14,7 +14,7 @@ def output_data(timestamp, temperature, humidity):
     date = datetime.datetime.fromtimestamp(timestamp).replace(microsecond=0).isoformat()
     output = u"Date: {:s}, Temperature: {:g}\u00b0C, Humidity: {:g}%\n".format(date, temperature, humidity)
     print(output)
-    with open('./humidity-temp.log', 'a') as file:
+    with open('/opt/DHT22-humidity-temp-sensor/humidity-temp.log', 'a') as file:
         file.write(output)
 while True:
     pi = pigpio.pi()
@@ -38,4 +38,4 @@ while True:
         except KeyboardInterrupt:
             break
     
-    time.sleep(10) 
+    time.sleep(600) 
